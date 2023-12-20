@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/download.png">
+
+    <!-- BOOSTRAP CDN -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!-- FONT AWESOME CDN -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <section class="header">
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bar">
+            <div class="container">
+                <a class="navbar-brand" href="#"><i class="fa-solid fa-plane fa-rotate-270 plane me-3"
+                        style="color: white;"></i>WanderLust</a>
+                <button class="navbar-toggler shadow-none border-8" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header text-white border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                        <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3"
+                            style="font-weight: bold;">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="#about">About Us</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="#destination">Destination</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="#tour">Tours</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="#contact">Contact Us</a>
+                            </li>
+
+                        </ul>
+                        <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3 ">
+                            <a class="text-white text-decoration-none px-3 py-1 rounded-4"
+                                style="background-color: #e7a20d;" href="#login">Login</a>
+                            <a class="text-white text-decoration-none px-3 py-1 rounded-4"
+                                style="background-color: #e7a20d;" href="#login">Sign Up</a>
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </section>
+    <section id="home">
+        <!-- CAROUSEL -->
+        <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item bg-img1 active" data-bs-interval="2000">
+                    <div class="content">
+                        <p>Explore the most breathtaking destinations, thrilling adventures, and cultural
+                            experiences
+                            around the globe.</p>
+                        <button class="px-3 py-1 rounded-4 button">Book Now</button>
+                    </div>
+
+                </div>
+                <div class="carousel-item bg-img2" data-bs-interval="2000">
+                    <div class="content">
+                        <p>Explore the most breathtaking destinations, thrilling adventures, and cultural
+                            experiences
+                            around the globe.</p>
+                        <button class="px-3 py-1 rounded-4 button">Book Now</button>
+                    </div>
+                </div>
+                <div class="carousel-item bg-img3" data-bs-interval="2000">
+                    <div class="content">
+                        <p>Explore the most breathtaking destinations, thrilling adventures, and cultural
+                            experiences
+                            around the globe.</p>
+                        <button class="px-3 py-1 rounded-4 button">Book Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <section id="about">
+        <div class="row me-5 mt-5 ms-5">
+            <div class="col-lg-6">
+                <div class="outer position-relative w-100" style="height: 600px;">
+
+                    <div class="position-absolute top-50 start-50 translate-middle ps-3"
+                        style="width: 300px; height: 300px;">
+                        <img class="img1 w-100 h-100 rounded-4" src="./images/Travel-Guide-to-Vietnam.jpg" alt="img4">
+                    </div>
+                    <div class="position-absolute bottom-50 end-50 ps-4" style="width: 180px;">
+                        <img class="img2 w-100 h-100 rounded-4" src="./images/istockphoto-1285301614-612x612.jpg"
+                            alt="img5">
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="col-lg-6">
+                <div class="row">
+                    <p class="heading">Get About Us</p>
+                </div>
+                <div class="row">
+                    <p class="sub-heading">We Create Journeys Worth Taking For The Traveler</p>
+                </div>
+                <div class="row">
+                    <p class="cont">Progressively impact multidisciplinary leadership skills via e-business
+                        leadership
+                        skills.
+                        Holisticly repurpose multifunctional data before turnkey information. Globally restore
+                        client-focused
+                        potentialities before scalable core competencies.</p>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-6">
+                        <div class="exp d-flex justify-content-center gap-2">
+                            <div>
+                                <img style="width:60px;" src="./images/7732653.png" alt="img6">
+                            </div>
+
+                            <div>
+                                <h5 style="font-weight: bold;">24 Years Experience</h5>
+                                <p>Holisticly procrastinate real-time solutions for services.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="agent d-flex justify-content-center gap-2">
+                            <div>
+                                <img style="width:60px;"
+                                    src="./images/150-1503639_travel-agent-computer-icons-customer-service-travel-help-desk-removebg-preview.png"
+                                    alt="img7">
+                            </div>
+
+                            <div>
+                                <h5 style="font-weight: bold;">Best Travel Agents</h5>
+                                <p>Holisticly procrastinate real-time solutions for services.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+    </section>
+
+     <!-- NO OF PEOPLE  -->
+     <section id="count">
+        <!-- LARGE SCREEN -->
+        <div class="d-none d-lg-block d-none d-md-block">         
+            <div class="row mt-5">
+
+                <div class="col-lg-3 col-md-4">
+    
+                    <div class="explore text-center">
+                        <i class="fa-solid fa-users " style="color: #e7a20d; font-size: 60px;"></i>
+                        <p class="number">100,000+</p>
+                        <p>Our Explorers</p>
+    
+                    </div>
+    
+                </div>
+    
+                
+    
+                <div class="col-lg-3 col-md-4">
+    
+                    <div class="dest text-center">
+                        <i class="fa-solid fa-earth-americas" style="color: #e7a20d; font-size: 60px;"></i>
+                        <p class="number">5,000+</p>
+                        <p>Destinations</p>
+                    </div>
+    
+                </div>
+    
+                <div class="col-lg-3 col-md-4">
+    
+                    <div class="trip text-center">
+    
+                        <i class="fa-solid fa-suitcase" style="color: #e7a20d; font-size: 60px;"></i>
+                        <p class="number">10,000+</p>
+                        <p>More Trips</p>
+    
+                    </div>
+    
+    
+                </div>
+    
+                <div class="col-lg-3">
+    
+                    <div class="luxury text-center">
+                        <i class="fa-solid fa-hotel" style="color: #e7a20d; font-size: 60px;"></i>
+                        <p class="number">2,000+</p>
+                        <p>Luxury Hotel</p>
+                    </div>
+    
+    
+                </div>
+    
+            </div>
+    
+
+
+
+        </div>
+        <!-- EXTRA SMALL SCREEN -->
+        <div class="d-block d-sm-none">
+            <div class="row">
+                <div>
+    
+                    <div class="text-center bdr mt-3">
+                        <i class="fa-solid fa-users " style="color: #e7a20d; font-size: 60px;"></i>
+                        <p class="number">100,000+</p>
+                        <p>Our Explorers</p>
+    
+                    </div>
+    
+                </div>
+            </div>
+            <div class="row">
+                <div class="dest text-center bdr mt-3">
+                    <i class="fa-solid fa-earth-americas" style="color: #e7a20d; font-size: 60px;"></i>
+                    <p class="number">5,000+</p>
+                    <p>Destinations</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="trip text-center bdr mt-3">
+    
+                    <i class="fa-solid fa-suitcase" style="color: #e7a20d; font-size: 60px;"></i>
+                    <p class="number">10,000+</p>
+                    <p>More Trips</p>
+
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="luxury text-center mt-3">
+                    <i class="fa-solid fa-hotel" style="color: #e7a20d; font-size: 60px;"></i>
+                    <p class="number">2,000+</p>
+                    <p>Luxury Hotel</p>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- SMALL SCREEN -->
+        <div class="d-none d-sm-block d-md-none">
+            <div class="row">
+                <div>
+    
+                    <div class="text-center bdr mt-3">
+                        <i class="fa-solid fa-users " style="color: #e7a20d; font-size: 60px;"></i>
+                        <p class="number">100,000+</p>
+                        <p>Our Explorers</p>
+    
+                    </div>
+    
+                </div>
+            </div>
+            <div class="row">
+                <div class="dest text-center bdr mt-3">
+                    <i class="fa-solid fa-earth-americas" style="color: #e7a20d; font-size: 60px;"></i>
+                    <p class="number">5,000+</p>
+                    <p>Destinations</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="trip text-center bdr mt-3">
+    
+                    <i class="fa-solid fa-suitcase" style="color: #e7a20d; font-size: 60px;"></i>
+                    <p class="number">10,000+</p>
+                    <p>More Trips</p>
+
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="luxury text-center mt-3">
+                    <i class="fa-solid fa-hotel" style="color: #e7a20d; font-size: 60px;"></i>
+                    <p class="number">2,000+</p>
+                    <p>Luxury Hotel</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+   
+
+    <!-- DESTINATION -->
+    <section id="destination">
+        
+
+            <div class="row pt-5"> 
+                <div class="row text-center">
+                    <p class="heading">Top Destinations</p>
+                </div>
+    
+                <div class="row text-center">
+    
+                    <p class="sub-heading">Popular Destinations</p>
+    
+                </div>
+                    <!-- EXTRA LARGE SCRREN -->
+                <div class="d-none d-xl-block">
+                    <div class="row mb-5">
+                        <div class="col-xl-3 y">
+        
+                            <div class="img-box mx-auto">
+                                <img  src="./images/8351bef0-ef7f-4979-b020-21621c88cdc0.webp" alt="img8">
+                                <h5>Switzerland</h5>
+                            </div>
+        
+                        </div>
+        
+                        <div class="col-xl-3 y">
+        
+                            <div class="img-box mx-auto">
+                                <img src="./images/shutterstock_174454670_gicbgy.webp" alt="img9">
+                                <h5>Barcelona</h5>
+                            </div>
+        
+                        </div>
+        
+                        <div class="col-xl-3 ">
+        
+                            <div class="img-box mx-auto">
+                                <img src="./images/Keizersgracht-Reguliersgracht-Amsterdam.jpg" alt="img10">
+                                <h5>Amsterdam</h5>
+                            </div>
+        
+                        </div>
+        
+                        <div class="col-xl-3 ">
+        
+                            <div class="img-box mx-auto">
+                                <img src="./images/eiffel-tower-in-paris-151-medium.jpg" alt="img11">
+                                <h5>Paris</h5>
+                            </div>
+        
+                        </div>
+                    </div>
+                    
+                        
+                </div>
+                    <!-- Large screen -->
+                    <div class="d-none d-lg-block d-xl-none">
+                        <div class="row mb-5">
+                            <div class="col-lg-4">
+            
+                                <div class="img-box mx-auto">
+                                    <img src="./images/8351bef0-ef7f-4979-b020-21621c88cdc0.webp" alt="img8">
+                                    <h5>Switzerland</h5>
+                                </div>
+            
+                            </div>
+            
+                            <div class="col-lg-4">
+            
+                                <div class="img-box mx-auto">
+                                    <img src="./images/shutterstock_174454670_gicbgy.webp" alt="img9">
+                                    <h5>Barcelona</h5>
+                                </div>
+            
+                            </div>
+            
+                            <div class="col-lg-4">
+            
+                                <div class="img-box mx-auto">
+                                    <img src="./images/Keizersgracht-Reguliersgracht-Amsterdam.jpg" alt="img10">
+                                    <h5>Amsterdam</h5>
+                                </div>
+            
+                            </div>
+            
+                            <div class="col-lg-12">
+            
+                                <div class="img-box mx-auto mt-5">
+                                    <img src="./images/eiffel-tower-in-paris-151-medium.jpg" alt="img11">
+                                    <h5>Paris</h5>
+                                </div>
+            
+                            </div>
+                        </div>
+                        
+                            
+                    </div>
+                    <!-- MEDIUM SCREEN -->
+                    <div class="d-none d-md-block d-lg-none">
+                        <div class="row mb-5">
+                            <div class="col-md-6">
+            
+                                <div class="img-box mx-auto">
+                                    <img src="./images/8351bef0-ef7f-4979-b020-21621c88cdc0.webp" alt="img8">
+                                    <h5>Switzerland</h5>
+                                </div>
+            
+                            </div>
+            
+                            <div class="col-md-6">
+            
+                                <div class="img-box mx-auto">
+                                    <img src="./images/shutterstock_174454670_gicbgy.webp" alt="img9">
+                                    <h5>Barcelona</h5>
+                                </div>
+            
+                            </div>
+            
+                            <div class="col-md-6">
+            
+                                <div class="img-box mx-auto mt-5">
+                                    <img src="./images/Keizersgracht-Reguliersgracht-Amsterdam.jpg" alt="img10">
+                                    <h5>Amsterdam</h5>
+                                </div>
+            
+                            </div>
+            
+                            <div class="col-md-6">
+            
+                                <div class="img-box mx-auto mt-5">
+                                    <img src="./images/eiffel-tower-in-paris-151-medium.jpg" alt="img11">
+                                    <h5>Paris</h5>
+                                </div>
+            
+                            </div>
+                        </div>
+                        
+                            
+                    </div>
+                    <!-- SMALL SCREEN -->
+                    <div class=" d-none d-sm-block d-md-none">
+                        <div class="row">
+                            <div class="col-sm-12 mb-5">
+            
+                                <div class="img-box mx-auto">
+                                    <img src="./images/8351bef0-ef7f-4979-b020-21621c88cdc0.webp" alt="img8">
+                                    <h5>Switzerland</h5>
+                                </div>
+            
+                            </div>
+            
+                            <div class="col-sm-12 mb-5">
+            
+                                <div class="img-box  mx-auto">
+                                    <img src="./images/shutterstock_174454670_gicbgy.webp" alt="img9">
+                                    <h5>Barcelona</h5>
+                                </div>
+            
+                            </div>
+            
+                            <div class="col-sm-12 mb-5">
+            
+                                <div class="img-box mx-auto">
+                                    <img src="./images/Keizersgracht-Reguliersgracht-Amsterdam.jpg" alt="img10">
+                                    <h5>Amsterdam</h5>
+                                </div>
+            
+                            </div>
+            
+                            <div class="col-sm-12 mb-5">
+            
+                                <div class="img-box mx-auto">
+                                    <img src="./images/eiffel-tower-in-paris-151-medium.jpg" alt="img11">
+                                    <h5>Paris</h5>
+                                </div>
+            
+                            </div>
+                        </div>
+                        
+                            
+                    </div>
+                    <!-- EXTRA SMALL -->
+    
+                    <div class="d-block d-sm-none">
+                        <div class="row">
+                            <div class="col-12 mb-5">
+            
+                                <div class="img-box mx-auto">
+                                    <img  src="./images/8351bef0-ef7f-4979-b020-21621c88cdc0.webp" alt="img8">
+                                    <h5>Switzerland</h5>
+                                </div>
+            
+                            </div>
+            
+                            <div class="col-12 mb-5">
+            
+                                <div class="img-box mx-auto">
+                                    <img  src="./images/shutterstock_174454670_gicbgy.webp" alt="img9">
+                                    <h5>Barcelona</h5>
+                                </div>
+            
+                            </div>
+            
+                            <div class="col-12 mb-5">
+            
+                                <div class="img-box mx-auto">
+                                    <img src="./images/Keizersgracht-Reguliersgracht-Amsterdam.jpg" alt="img10">
+                                    <h5>Amsterdam</h5>
+                                </div>
+            
+                            </div>
+            
+                            <div class="col-12 mb-5">
+            
+                                <div class="img-box mx-auto">
+                                    <img  src="./images/eiffel-tower-in-paris-151-medium.jpg" alt="img11">
+                                    <h5>Paris</h5>
+                                </div>
+            
+                            </div>
+                        </div>
+                        
+                            
+                    </div>
+            </div>
+        </div> 
+            
+            
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="choose">
+        <div class="row mt-5 ms-5 me-5">
+            <div class="col-lg-6">
+                <div class="row">
+                    <p class="heading">Why Choose Us</p>
+                </div>
+
+                <div class="row">
+                    <p class="sub-heading">Get The Best Travel Experience</p>
+                </div>
+
+                <div class="row">
+                    <p>Professionally engineer world-class leadership skills after end-to-end growth strategies.
+                        Assertively create
+                        innovative schemas through installed base potentialities.</p>
+                </div>
+                
+                <div class="row mt-5">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-2 ">
+                                <i class="fa-regular fa-calendar-days fa-3x" style="color: #e7a20d"></i>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-12">
+                                <div class="row">
+                                    <h5>Set Travel Plan</h5>
+                                </div>
+                                <div class="row">
+                                    <p>Distinctively impact client-centered ideas via future-proof paradigms.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-2">
+                                <i class="fa-solid fa-handshake-angle" style="color: #e7a10d;font-size: 40px;"></i>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-12">
+                                <div class="row">
+                                    <h5>Best Guide</h5>
+                                </div>
+                                <div class="row">
+                                    <p>Distinctively impact client-centered ideas via future-proof paradigms.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-2">
+                                <i class="fa-solid fa-hotel fa-3x" style="color: #e7a20d;"></i>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-12">
+                                <div class="row">
+                                    <h5>Luxary Hotel</h5>
+                                </div>
+                                <div class="row">
+                                    <p>Distinctively impact client-centered ideas via future-proof paradigms.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-2">
+                                <i class="fa-solid fa-compass fa-3x" style="color: #e7a10d;"></i>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-12">
+                                <div class="row">
+                                    <h5>Explore Around</h5>
+                                </div>
+                                <div class="row">
+                                    <p>Distinctively impact client-centered ideas via future-proof paradigms.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-2">
+                                <i class="fa-solid fa-phone-volume fa-3x" style="color: #e7a10d;"></i>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-12">
+                                <div class="row">
+                                    <h5>Support 24/7</h5>
+                                </div>
+                                <div class="row">
+                                    <p>Distinctively impact client-centered ideas via future-proof paradigms.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3 col-md-2">
+                                <i class="fa-solid fa-check fa-3x" style="color: #e7a10d;"></i>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-12">
+                                <div class="row">
+                                    <h5>Easy Booking</h5>
+                                </div>
+                                <div class="row">
+                                    <p>Distinctively impact client-centered ideas via future-proof paradigms.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+
+                
+
+
+
+            </div>
+
+            <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                <div>
+                    <img class="w-100 h-50 rounded-4" src="./images/travel-expense-reports-t-and-e-report.webp" alt="img12">
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- TOUR -->
+    <section id="tour">
+        <div class="pop text-center mt-5">
+            <p class="heading">Featured Tour</p>
+            <p class="sub-heading">Most Popular Tours</p>
+        </div>
+
+
+
+
+
+        <div class="row row-cols-1 row-cols-lg-4 md-3 g-4 ms-5 me-5">
+
+            <div class="col mt-5">
+                <div class="card">
+                    <img style="height: 200px;" src="./images/Tour/1-9.webp" class="card-img-top" alt="img13">
+                    <div class="card-body">
+                        <div class="loc">
+                            <p><i class="fa-solid fa-location-dot" style="color: #e7a10d;"></i> Madrid, Spain</p>
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+
+
+                        </div>
+                        <h5 class="card-title">Discovery Island Kayaking</h5>
+                        <div class="duration">
+                            <p><i class="fa-regular fa-clock" style="color: #e7a20d;"></i> 18 days</p>
+                            <p><i class="fa-solid fa-users" style="color: #e7a20d;"></i> 500+</p>
+                        </div>
+                        <hr style="border: 1px solid;">
+                        <div class="foot">
+
+                            <p>From <span style="color: #e7a20d;">$250</span></p>
+                            <p class="details">SEE DETAILS <i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="color: #e7a20d;"></i></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-5">
+                <div class="card">
+                    <img style="height: 200px;" src="./images/Tour/1-hotel-brooklyn-bridge.jpg" class="card-img-top"
+                        alt="img14">
+                    <div class="card-body">
+                        <div class="loc">
+                            <p><i class="fa-solid fa-location-dot" style="color: #e7a10d;"></i> Madrid, Spain</p>
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+
+
+                        </div>
+                        <h5 class="card-title">Brooklyn Beach Resort Tour</h5>
+                        <div class="duration">
+                            <p><i class="fa-regular fa-clock" style="color: #e7a20d;"></i> 10 days</p>
+                            <p><i class="fa-solid fa-users" style="color: #e7a20d;"></i> 50+</p>
+                        </div>
+                        <hr style="border: 1px solid;">
+                        <div class="foot">
+
+                            <p>From <span style="color: #e7a20d;">$250</span></p>
+                            <p class="details">SEE DETAILS <i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="color: #e7a20d;"></i></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-5">
+                <div class="card">
+                    <img style="height: 200px;" src="./images/Tour/960x0.webp" class="card-img-top" alt="img15">
+                    <div class="card-body">
+                        <div class="loc">
+                            <p><i class="fa-solid fa-location-dot" style="color: #e7a10d;"></i> Bali, Indonesia</p>
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+
+
+                        </div>
+                        <h5 class="card-title">Bali One Life Adventure</h5>
+                        <div class="duration">
+                            <p><i class="fa-regular fa-clock" style="color: #e7a20d;"></i> 7 days</p>
+                            <p><i class="fa-solid fa-users" style="color: #e7a20d;"></i> 60+</p>
+                        </div>
+                        <hr style="border: 1px solid;">
+                        <div class="foot">
+
+                            <p>From <span style="color: #e7a20d;">$350</span></p>
+                            <p class="details">SEE DETAILS <i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="color: #e7a20d;"></i></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-5">
+                <div class="card">
+                    <img style="height: 200px;" src="./images/Tour/chumphon-destination.jpg" class="card-img-top"
+                        alt="img16">
+                    <div class="card-body">
+                        <div class="loc">
+                            <p><i class="fa-solid fa-location-dot" style="color: #e7a10d;"></i> Chumphon, Thailand</p>
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+
+
+                        </div>
+                        <h5 class="card-title">Pak Chumphon Town Tour</h5>
+                        <div class="duration">
+                            <p><i class="fa-regular fa-clock" style="color: #e7a20d;"></i> 12 days</p>
+                            <p><i class="fa-solid fa-users" style="color: #e7a20d;"></i> 70+</p>
+                        </div>
+                        <hr style="border: 1px solid;">
+                        <div class="foot">
+
+                            <p>From <span style="color: #e7a20d;">$450</span></p>
+                            <p class="details">SEE DETAILS <i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="color: #e7a20d;"></i></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-5">
+                <div class="card">
+                    <img style="height: 200px;" src="./images/Tour//ffac341b1319ec58070646efb03ea636.jpg"
+                        class="card-img-top" alt="img17">
+                    <div class="card-body">
+                        <div class="loc">
+                            <p><i class="fa-solid fa-location-dot" style="color: #e7a10d;"></i> Lasvegus, USA</p>
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+
+
+                        </div>
+                        <h5 class="card-title">Brooklyn Christmas Lights</h5>
+                        <div class="duration">
+                            <p><i class="fa-regular fa-clock" style="color: #e7a20d;"></i> 15 days</p>
+                            <p><i class="fa-solid fa-users" style="color: #e7a20d;"></i> 300+</p>
+                        </div>
+                        <hr style="border: 1px solid;">
+                        <div class="foot">
+
+                            <p>From <span style="color: #e7a20d;">$450</span></p>
+                            <p class="details">SEE DETAILS <i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="color: #e7a20d;"></i></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-5">
+                <div class="card">
+                    <img style="height: 200px;" src="./images/Tour/hero-winter-scaled.jpg" class="card-img-top"
+                        alt="img18">
+                    <div class="card-body">
+                        <div class="loc">
+                            <p><i class="fa-solid fa-location-dot" style="color: #e7a10d;"></i> Lasvegus, USA</p>
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+
+
+                        </div>
+                        <h5 class="card-title">Kupland Christmas Tour</h5>
+                        <div class="duration">
+                            <p><i class="fa-regular fa-clock" style="color: #e7a20d;"></i> 6 days</p>
+                            <p><i class="fa-solid fa-users" style="color: #e7a20d;"></i> 60+</p>
+                        </div>
+                        <hr style="border: 1px solid;">
+                        <div class="foot">
+
+                            <p>From <span style="color: #e7a20d;">$450</span></p>
+                            <p class="details">SEE DETAILS <i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="color: #e7a20d;"></i></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-5">
+                <div class="card">
+                    <img style="height: 200px;" src="./images/Tour/Laguna de Los Tres -Mount Fitz Roy, Argentina.jpg"
+                        class="card-img-top" alt="img19">
+                    <div class="card-body">
+                        <div class="loc">
+                            <p><i class="fa-solid fa-location-dot" style="color: #e7a10d;"></i> Chumphon, Thailand</p>
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+
+
+                        </div>
+                        <h5 class="card-title">Los Glaciares & Fitz Trip</h5>
+                        <div class="duration">
+                            <p><i class="fa-regular fa-clock" style="color: #e7a20d;"></i> 20 days</p>
+                            <p><i class="fa-solid fa-users" style="color: #e7a20d;"></i> 50+</p>
+                        </div>
+                        <hr style="border: 1px solid;">
+                        <div class="foot">
+
+                            <p>From <span style="color: #e7a20d;">$250</span></p>
+                            <p class="details">SEE DETAILS <i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="color: #e7a20d;"></i></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-5">
+                <div class="card">
+                    <img style="height: 200px;" src="./images/Tour/temple-barcelona-spain.avif" class="card-img-top"
+                        alt="img20">
+                    <div class="card-body">
+                        <div class="loc">
+                            <p><i class="fa-solid fa-location-dot" style="color: #e7a10d;"></i> Barcelona, Spain</p>
+                            <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+
+
+                        </div>
+                        <h5 class="card-title">Places To Travel November</h5>
+                        <div class="duration">
+                            <p><i class="fa-regular fa-clock" style="color: #e7a20d;"></i> 13 days</p>
+                            <p><i class="fa-solid fa-users" style="color: #e7a20d;"></i> 100+</p>
+                        </div>
+                        <hr style="border: 1px solid;">
+                        <div class="foot">
+
+                            <p>From <span style="color: #e7a20d;">$250</span></p>
+                            <p class="details">SEE DETAILS <i class="fa-solid fa-arrow-up-right-from-square"
+                                    style="color: #e7a20d;"></i></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+
+        <div class="row text-center pt-3 pb-5">
+            <div class="row">
+                <p class="heading">Testimonials</p>
+            </div>
+
+            <div class="row">
+
+                <p class="sub-heading">What Customer Say About Us</p>
+
+            </div>
+            <!-- LARGE SCREEN -->
+            <div class="d-none d-lg-block">
+                <div class="row mt-5">
+
+                    <div class="col-lg-4 ti">
+    
+                        <div class="box1 ms-1 p-3 ">
+                            <img class="w-25" src="./images/p1.jpg" alt="img21">
+                            <p>David</p>
+                            <div class="quote">
+                                <p><i class="fa-solid fa-quote-left" style="color: #e7a20d;"></i> I recently used this
+                                    website to plan a week-long vacation to Bali, and I must say, I was quite impressed with
+                                    my overall experience.</p>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="col-lg-4 ti">
+    
+                        <div class="box2 p-3">
+                            <img class="w-25" src="./images/p2.jpg" alt="img22">
+                            <p>Aleena</p>
+                            <div class="quote">
+                                <p><i class="fa-solid fa-quote-left" style="color: #e7a20d;"></i> This website offers some
+                                    great travel guides and packing lists, which I found very useful for preparing for my
+                                    trip.</p>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="col-lg-4 ti">
+    
+                        <div class="box3 p-3">
+                            <img class="w-25" src="./images/p3.jpg" alt="img23">
+                            <p>Kunal</p>
+                            <div class="quote">
+                                <p><i class="fa-solid fa-quote-left" style="color: #e7a20d;"></i> The website's security
+                                    measures were top-notch, and I felt confident in sharing my personal and payment
+                                    information.</p>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+    
+                </div>
+            </div>
+            
+            <!-- MEDIUM SCREEN -->
+            <div class="d-none d-md-block d-lg-none">
+                <div class="row mt-5">
+
+                    <div class="col-md-6 ti">
+    
+                        <div class="box1 ms-1 p-3 ">
+                            <img class="w-25" src="./images/p1.jpg" alt="img21">
+                            <p>David</p>
+                            <div class="quote">
+                                <p><i class="fa-solid fa-quote-left" style="color: #e7a20d;"></i> I recently used this
+                                    website to plan a week-long vacation to Bali, and I must say, I was quite impressed with
+                                    my overall experience.</p>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="col-md-6 ti">
+    
+                        <div class="box2 p-3">
+                            <img class="w-25" src="./images/p2.jpg" alt="img22">
+                            <p>Aleena</p>
+                            <div class="quote">
+                                <p><i class="fa-solid fa-quote-left" style="color: #e7a20d;"></i> This website offers some
+                                    great travel guides and packing lists, which I found very useful for preparing for my
+                                    trip.</p>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="col-md-12 ti">
+    
+                        <div class="box3ii mt-5 p-3">
+                            <img class="w-25" src="./images/p3.jpg" alt="img23">
+                            <p>Kunal</p>
+                            <div class="quote">
+                                <p><i class="fa-solid fa-quote-left" style="color: #e7a20d;"></i> The website's security
+                                    measures were top-notch, and I felt confident in sharing my personal and payment
+                                    information.</p>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+    
+                </div>
+
+            </div>
+            <!-- SMALL SCREEN -->
+            <div class="d-none d-sm-block d-md-none">
+                <div class="row mt-5">
+
+                    <div class="col-sm-12 ti">
+    
+                        <div class="box1ii mb-5 p-3 ">
+                            <img class="w-25" src="./images/p1.jpg" alt="img21">
+                            <p>David</p>
+                            <div class="quote">
+                                <p><i class="fa-solid fa-quote-left" style="color: #e7a20d;"></i> I recently used this
+                                    website to plan a week-long vacation to Bali, and I must say, I was quite impressed with
+                                    my overall experience.</p>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="col-sm-12 ti">
+    
+                        <div class="box2ii mb-5 p-3">
+                            <img class="w-25" src="./images/p2.jpg" alt="img22">
+                            <p>Aleena</p>
+                            <div class="quote">
+                                <p><i class="fa-solid fa-quote-left" style="color: #e7a20d;"></i> This website offers some
+                                    great travel guides and packing lists, which I found very useful for preparing for my
+                                    trip.</p>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="col-sm-12 ti">
+    
+                        <div class="box3ii p-3">
+                            <img class="w-25" src="./images/p3.jpg" alt="img23">
+                            <p>Kunal</p>
+                            <div class="quote">
+                                <p><i class="fa-solid fa-quote-left" style="color: #e7a20d;"></i> The website's security
+                                    measures were top-notch, and I felt confident in sharing my personal and payment
+                                    information.</p>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+    
+                </div>
+            </div>
+            <!-- EXTRA SMALL SCREEN -->
+            <div class="d-block d-sm-none">
+                <div class="row mt-5">
+
+                    <div class="col-sm-12 ti">
+    
+                        <div class="box1ii mb-5 p-3 ">
+                            <img class="w-25" src="./images/p1.jpg" alt="img21">
+                            <p>David</p>
+                            <div class="quote">
+                                <p><i class="fa-solid fa-quote-left" style="color: #e7a20d;"></i> I recently used this
+                                    website to plan a week-long vacation to Bali, and I must say, I was quite impressed with
+                                    my overall experience.</p>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="col-sm-12 ti">
+    
+                        <div class="box2ii mb-5 p-3">
+                            <img class="w-25" src="./images/p2.jpg" alt="img22">
+                            <p>Aleena</p>
+                            <div class="quote">
+                                <p><i class="fa-solid fa-quote-left" style="color: #e7a20d;"></i> This website offers some
+                                    great travel guides and packing lists, which I found very useful for preparing for my
+                                    trip.</p>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="col-sm-12 ti">
+    
+                        <div class="box3ii p-3">
+                            <img class="w-25" src="./images/p3.jpg" alt="img23">
+                            <p>Kunal</p>
+                            <div class="quote">
+                                <p><i class="fa-solid fa-quote-left" style="color: #e7a20d;"></i> The website's security
+                                    measures were top-notch, and I felt confident in sharing my personal and payment
+                                    information.</p>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+    
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- FOOTER -->
+    <section id="contact">
+
+
+        <footer class="text-white text-center text-lg-start footer-bg">
+            
+            <div class="container p-4">
+                
+                <div class="row">
+                    
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">About Company</h5>
+
+                        <p>
+                            WanderLust is an organization or business that offers a wide range of travel-related
+                            services to
+                            individuals, families, groups, and organizations. Our primary goal is to assist customers in
+                            planning, booking, and experiencing various types of travel adventures, including vacations,
+                            tours, and business trips.
+                        </p>
+                        <div class="icon-set">
+
+                            <div class="icons">
+                
+                                <a class="link2" href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                
+                
+                            </div>
+                
+                            <div class="icons">
+                
+                                <a class="link2" href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                
+                            <div class="icons">
+                                <a class="link2" href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                
+                            </div>
+                
+                            <div class="icons">
+                
+                                <a class="link2" href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Quick Links</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#home" class="text-white">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about" class="text-white">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#destination" class="text-white">Destination</a>
+                            </li>
+                            <li>
+                                <a href="#tour" class="text-white">Tours</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+
+                    
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 ">
+                        
+                        <h5 class="text-uppercase mb-2">Contact Us</h5>
+                        <p><i class="fa-solid fa-location-dot align-middle me-3" style="color: white;"></i> New York, NY
+                            10012, US</p>
+                        <p>
+                            <i class="fa-solid fa-envelope me-3" style="color: white;"></i>
+                            info@wanderlust.com
+                        </p>
+                        
+                            
+                        <p>
+                            <i class="fa-solid fa-phone me-3" style="color: white;"></i>
+                            
+                                + 01 234 567 88
+
+                        </p>
+                                
+                            
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="bd-arrow">
+                <div class="arrow">
+                    <a href="#home"><i class="fa-solid fa-angle-up" style="color:white; font-size: 45px;"></i></a>
+                    
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2023 Copyright:
+                <a class="text-white" href="
+            #home">WanderLust</a>
+            </div>
+
+            
+            
+        </footer>
+    </section>
+
+
+
+</body>
+
+
+
+</html>
